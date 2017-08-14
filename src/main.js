@@ -8,9 +8,6 @@ import Home from './components/home'
 import Login from './components/login'
 import Reg from './components/reg'
 import Person from './components/person'
-import 'bootstrap/dist/css/bootstrap.css'
-import './assets/css/templatemo.css'
-import './assets/css/font-awesome.min.css'
 import store from './store/index'
 
 const routes = [{

@@ -1,7 +1,7 @@
 <template>
   <div>
     <router-link to="/">首页</router-link>
-    <router-link to="/person">个人页</router-link>
+    <router-link to="/person">用户中心</router-link>
 
     <router-link to="/login" v-if="!user">登录</router-link>
     <router-link to="/reg" v-if="!user">注册</router-link>
@@ -14,13 +14,11 @@
   export default {
     computed: {
       ...mapGetters({
-        UserInfo:"UserInfo"
       }),
       ...mapActions({
-        UserLogout:"UserLogout"
       }),
       user(){
-        return this.UserInfo
+        return 
       }
     },
     methods:{
